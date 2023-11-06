@@ -1,0 +1,59 @@
+# Q1
+
+To further simplify the equation, let:\
+<center>
+$y=Rating$\
+$x=Original[Internal]$, \
+where, considering both cases, $x \in \{0,1, -1\}$\
+$S=Salary$\
+</center>
+Therefore the model becomes:\
+<center>
+$y=\beta_{0}+\beta_{1}x+\beta_{2}S+\beta_{3}xS+\epsilon$\
+</center>
+and\
+<center>
+$y=\alpha_{0}+\alpha_{1}x+\alpha_{2}S+\alpha_{3}xS+\epsilon$\
+</center>
+\
+For the first case, when $x=1$:\
+<center>
+$y=\beta_{0}+\beta_{1}+\beta_{2}S+\beta_{3}S+\epsilon$\
+</center>
+which is equivalent to\
+<center>
+$y=(\beta_{0}+\beta_{1})+(\beta_{2}+\beta_{3})S+\epsilon$\
+</center>
+when $x=0$:\
+<center>
+$y=\beta_{0}+\beta_{2}S+\epsilon$\
+</center>
+\
+For the second case, when $x=1$:\
+<center>
+$y=\alpha_{0}+\alpha_{1}+\alpha_{2}S+\alpha_{3}S+\epsilon$\
+</center>
+which is equivalent to\
+<center>
+$y=(\alpha_{0}+\alpha_{1})+(\alpha_{2}+\alpha_{3})S+\epsilon$\
+</center>
+when $x=-1$:\
+<center>
+$y=\alpha_{0}-\alpha_{1}+\alpha_{2}S-\alpha_{3}S+\epsilon$\
+</center>
+which is equivalent to\
+<center>
+$y=(\alpha_{0}-\alpha_{1})+(\alpha_{2}-\alpha_{3})S+\epsilon$\
+</center>
+\
+Comparing the coefficient terms, we have: 
+$$
+\begin{cases} \alpha_{0}+\alpha_{1}=\beta_{0}+\beta_{1}\\\\\alpha_{2}+\alpha_{3}=\beta_{2}+\beta_{3}\\\\\alpha_{0}-\alpha_{1}=\beta_{0}\\\\\alpha_{2}-\alpha_{3}=\beta_{2} \end{cases}
+$$
+Rearranging terms, we have: 
+$$
+\begin{cases} \alpha_{0}=\beta_{0}+\frac{\beta_{1}}{2}\\\\\alpha_{1}=\frac{\beta_{1}}{2}\\\\\alpha_{2}=\beta_{2}+\frac{\beta_{3}}{2}\\\\\alpha_{3}=\frac{\beta_{3}}{2} \end{cases}
+$$
+
+\
+\
